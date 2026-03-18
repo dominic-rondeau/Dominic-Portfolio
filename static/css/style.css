@@ -87,6 +87,15 @@ main {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden; 
+}
+
+.smallCenter img {
+    transition: all 0.3s ease; 
+}
+
+.smallCenter:hover img {
+    transform: scale(1.2); 
 }
 
 .store-cart {
