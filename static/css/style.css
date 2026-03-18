@@ -1,0 +1,189 @@
+:root {
+    --brand: #ff6b3d;
+    --brand-accent: #ff9f1c;
+    --surface: #111826;
+    --surface-elevated: #192233;
+    --surface-muted: #090f1d;
+    --ink: #e7eef7;
+
+    --bs-primary: #ff6b3d;
+    --bs-primary-rgb: 255, 107, 61;
+    --bs-link-color: #ff9f1c;
+    --bs-link-hover-color: #ffb347;
+}
+
+body.app-shell {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--ink);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background:
+    radial-gradient(circle at 5% 0%, #3f1a15 0, transparent 42%),
+    radial-gradient(circle at 95% 20%, #4b2b12 0, transparent 35%),
+        var(--surface-muted);
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.navbar-brand {
+    letter-spacing: 0.06em;
+    color: var(--brand) !important;
+}
+
+.btn-primary {
+    --bs-btn-bg: #ff6b3d;
+    --bs-btn-border-color: #ff6b3d;
+    --bs-btn-hover-bg: #f25528;
+    --bs-btn-hover-border-color: #f25528;
+    --bs-btn-active-bg: #d94a20;
+    --bs-btn-active-border-color: #d94a20;
+    --bs-btn-disabled-bg: #b84526;
+    --bs-btn-disabled-border-color: #b84526;
+}
+
+.btn-outline-primary {
+    --bs-btn-color: #ff9f1c;
+    --bs-btn-border-color: #ff9f1c;
+    --bs-btn-hover-bg: #ff9f1c;
+    --bs-btn-hover-border-color: #ff9f1c;
+    --bs-btn-active-bg: #e58d11;
+    --bs-btn-active-border-color: #e58d11;
+    --bs-btn-disabled-color: #c77622;
+    --bs-btn-disabled-border-color: #c77622;
+}
+
+.hero-panel {
+    background: linear-gradient(130deg, #b84325, #d97706);
+    color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2.2rem rgba(5, 11, 20, 0.45);
+}
+
+.content-card {
+    background: var(--surface-elevated);
+    border: 1px solid #553429;
+    border-radius: 1rem;
+    box-shadow: 0 0.75rem 1.5rem rgba(5, 11, 20, 0.35);
+}
+
+.form-container {
+    background: var(--surface-elevated);
+    border: 1px solid #553429;
+    border-radius: 1rem;
+    box-shadow: 0 0.75rem 1.5rem rgba(5, 11, 20, 0.35);
+    padding: 1.5rem;
+}
+
+.card {
+    background-color: var(--surface);
+    color: var(--ink);
+}
+
+.smallCenter {
+    max-width: 18rem;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.store-cart {
+    position: sticky;
+    top: 6rem;
+    z-index: 10;
+}
+
+.cart-checkout-btn {
+    width: 100%;
+    border: 1px solid #a84e2f;
+    background: linear-gradient(140deg, #2b1a16, #3a2119);
+    color: var(--ink);
+}
+
+.cart-checkout-btn:hover,
+.cart-checkout-btn:focus-visible {
+    border-color: var(--brand);
+    background: linear-gradient(140deg, #3a2119, #4a2617);
+    color: #ffffff;
+}
+
+.cart-icon-wrap {
+    width: 4.25rem;
+    height: 4.25rem;
+    border-radius: 999px;
+    background: linear-gradient(135deg, var(--brand), var(--brand-accent));
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.35);
+}
+
+.cart-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.cart-count {
+    color: var(--brand-accent);
+    font-weight: 700;
+}
+
+.checkout-item {
+    border: 1px solid #5e3322;
+    border-radius: 0.75rem;
+    background: #151c2b;
+}
+
+.checkout-item-price {
+    color: var(--brand-accent);
+    font-weight: 600;
+}
+
+.order-header-themed {
+    background: linear-gradient(120deg, #a23c22, #d97706);
+    color: #ffffff;
+}
+
+.btn-cancel-order {
+    --bs-btn-color: #ffffff;
+    --bs-btn-bg: #c44e2e;
+    --bs-btn-border-color: #c44e2e;
+    --bs-btn-hover-color: #ffffff;
+    --bs-btn-hover-bg: #d85c35;
+    --bs-btn-hover-border-color: #d85c35;
+    --bs-btn-active-color: #ffffff;
+    --bs-btn-active-bg: #a93e23;
+    --bs-btn-active-border-color: #a93e23;
+}
+
+#loyalty-container {
+    position: relative;
+    width: 100%;
+    min-height: 16rem;
+    border-radius: 1rem;
+    border: 1px dashed #8a5a3f;
+    background: repeating-linear-gradient(
+        -45deg,
+        #101827,
+        #101827 14px,
+        #241811 14px,
+        #241811 28px
+    );
+}
+
+.sprite-button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url("../images/founder.jpeg");
+    background-size: cover;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    padding: 0;
+    box-shadow: 0 0.35rem 0.8rem rgba(0, 0, 0, 0.25);
+}
